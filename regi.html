@@ -30,6 +30,10 @@
                     <p id="datevalid"></p>
                 </div>
                 <div>
+                    <input onchange="nvalid()" type="number" id="no" required placeholder="Phone Number" class="input">
+                    <p id="numbervalid"></p>
+                </div>
+                <div>
                     <select>
                         <option value="Qualification">Qualification</option>
                         <option value="SSLC">SSLC</option>
@@ -44,10 +48,6 @@
                 
                 <div class="pass">
                     <div>
-                        <input onchange="nvalid()" type="number" id="no" required placeholder="Phone Number" class="input">
-                        <p id="numbervalid"></p>
-                    </div>
-                    <div>
                         <input type="password" placeholder="Type Password" required>
                         <p id="passwordvalid"></p>
                     </div>
@@ -56,16 +56,16 @@
                         <p id="Repasswordvalid"></p>
                     </div>
                     <div>
-                        <textarea cols="20" placeholder="Permenent Address" required></textarea>
+                        <textarea cols="22" rows="2" placeholder="Permenent Address" required></textarea>
                         <p id="Addressvalid"></p>
                     </div>
+                    <div class="r1">
+                        <div id="gender"><h3>Gender:</h3></div>
+                     <input class="radio" checked type="radio" name="r1">Male
+                     <input class="radio" type="radio" name="r1">Female
+                     <input class="radio" type="radio" name="r1">Others
+                    </div>
                 </div>
-        </div>
-        <div class="r1">
-            <div id="gender"><h3>Gender:</h3></div>
-         <input class="radio" checked type="radio" name="r1">Male
-         <input class="radio" type="radio" name="r1">Female
-         <input class="radio" type="radio" name="r1">Others
         </div>
         <div>
             <button type="Reset" id="reset">Reset</button>

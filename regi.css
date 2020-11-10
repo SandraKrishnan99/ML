@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.formi{
+    display: flex;
+    flex-direction: row;
+}
+p{
+    padding: 12px;
+}
+form{
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 94, 94);
+    flex-direction: column;
+}
+form{
+    position: relative;
+    transform: translate(-50,-50);
+}
+.names input,textarea{
+    padding: 10px;
+    margin-bottom: 14px;
+}
+.pass input,select{
+    padding: 10px;
+    margin-bottom: 14px;
+}
+.names{
+    padding: 40px;
+}
+.pass{
+    margin-top: 40px;
+}

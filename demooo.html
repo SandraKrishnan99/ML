@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demmoos.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Form Registeration:</h1>
+        </div>
+            <form class="form"> 
+                <div class="section1">
+                        <div>
+                            <input type="text" id="id" onchange="idvalid()" required placeholder="Id Here" class="input">
+                            <p id="id_valid"></p>
+                        </div>
+                        <div>
+                            <input type="text" id="name" onchange="namevalid()" required placeholder="Name here" class="input">
+                            <p id="name_valid"></p>
+                        </div>
+                        <div>
+                            <input type="email" id="Email" onchange="evalid()" required placeholder="Email ID here" class="input">
+                            <p id="email_valid"></p>
+                        </div>
+                        <div>
+                            <input onchange="nvalid()" type="number" id="no" required placeholder="Phone Number" class="input">
+                            <p id="numbervalid"></p>
+                        </div>
+                        <div>
+                            <input type="" id="date" onchange="dvalid()" required placeholder="Type Date:" class="input">
+                            <p id="datevalid"></p>
+                        </div>
+                        <div>
+                            <select>
+                                <option value="Qualification">Qualification</option>
+                                <option value="SSLC">SSLC</option>
+                                <option value="HIGHER SECONDARY">HIGHER SECONDARY</option>
+                                <option value="UG">UG</option>
+                                <option value="PG">PG</option>
+                                <option value="other">Other</option>
+                            </select>
+                        
+                        </div>
+
+                </div>
+                <div class="section2">
+                    <div>
+                        <input type="password" placeholder="Type Password" required class="input">
+                        <p id="passwordvalid"></p>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Re-Type Password" required class="input">
+                        <p id="Repasswordvalid"></p>
+                    </div>
+                    <div>
+                        <textarea cols="22" rows="2" placeholder="Permenent Address" required class="input"></textarea>
+                        <p id="Addressvalid"></p>
+                    </div>
+                    <div class="r1">
+                        <div id="gender"><h3>Gender:</h3></div>
+                     Male<input class="radio" checked type="radio" name="r1" value="Male">
+                     Female<input class="radio" type="radio" name="r1">
+                     Others<input class="radio" type="radio" name="r1">
+                    </div>
+                </div>
+                
+            </form>
+            <div>
+                <button type="Reset" id="Reset">Home</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" id="Submit">Submit</button>
+            </div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+        <script>
+                $("input,#gender,select,textarea").on("click",function() {
+                  $("input,#gender,select,textarea").fadeOut(50).fadeIn(200) ; 
+                    
+            });
+        </script>
+</body>
+</html>

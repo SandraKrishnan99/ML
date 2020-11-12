@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+    <main>
+        <!--The Head Section Which contains the Home About and all-->
+        <header>
+            <div class="headerone">
+                <div id="home">
+                    <a href="#">Home</a>
+                </div>
+                <div id="side">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </header>
+        <!--Ending of the above Section-->
+
+        <!--The starting of middle form and all-->
+        <section class="middlesec">
+            <div class="start">
+                <div class="leftdiv">
+                    <h1>Welcome To The Webpage</h1>
+                    <p>Welcome to the era of new technologies.To know more login and sail through the page.</p>
+                    <a href="#" onclick="showme()" id="readmore">Read More...<p id="para"></p></a>
+                </div>
+                <!--The login div-->
+                <div class="rightdiv">
+                    <h1>Fill The Form</h1>
+                    <form action="signup.html">
+                        <div class="class">
+                            <input name="email" type="email" required>
+                            <label for="email">Email ID:</label>
+                        </div>
+                        <div class="class">
+                            <input name="pass" type="password" required>
+                            <label for="pass">Password:</label>
+                        </div>
+                        <div class="submit">
+                            <input name="submit" type="submit" value="Sign Up">
+                        </div>
+                        <div class="last">
+                            <a href="forgot.html">Forget Password?</a>
+                            <a href="demooo.html">Register if not!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="jss.js"></script>
+</body>
+</html>

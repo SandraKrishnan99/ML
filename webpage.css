@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(206, 226, 224, 0.111);
+    position: absolute;
+    top: 0;
+}
+.headerone{
+    display: flex;
+    justify-content: space-between;
+}
+.headerone #side a{
+    margin-right: 100px;
+
+}
+.headerone a{
+    text-decoration: none;
+    color: rgb(174, 235, 253);
+}
+.headerone a:hover{
+    color: rgb(63, 66, 218);
+    font-size:18px;
+    transition: 0.5s;
+}
+/*End Head Section*/
+
+.middlesec {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(60, 64, 68,0.87),rgb(50,40,28,0.777)), url("wp4897261.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+.middlesec .start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.leftdiv{
+    width: 600px;
+}
+.leftdiv h1{
+    
+    color: rgb(204, 76, 136);
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.leftdiv a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.leftdiv p{
+    color: white;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 7px;
+}
+/*Right Sec*/
+
+.rightdiv{
+    width: 400px;
+    background-color: rgba(233, 226, 235, 0.222);
+    border-radius: 12px;
+    padding: 40px;
+}
+.rightdiv h1{
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+   
+
+}
+.rightdiv .class{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+.class input{
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.class label{
+    color:rgb(212, 228, 231);
+}
+.submit{
+    padding-top: 18px;
+}
+.submit input{
+    padding: 8px;
+    width: 200px;
+    background-color: rgba(231, 231, 240, 0.777);
+    border-radius: 4px;
+    border: 2px solid rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 58px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.rightdiv .submit input:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    
+}
+.middlesec .last{
+    display: flex;
+    width: 295px;
+    justify-content: space-between;
+    padding-top: 18px;
+    
+}
+.last a{
+    padding: 3px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: cornsilk;
+    background-color: rgb(250, 249, 245,0.111);
+    border-radius: 3px;
+}
